@@ -1,0 +1,110 @@
+{
+  "version": "1.0.0",
+  "date": "2022-03-10T00:00:00.000Z",
+  "isDone": true,
+  "comic": {
+    "id": "8d8sjd083",
+    "title": "Spring Comic"
+  },
+  "episode": {
+    "id": "145413165",
+    "number": "1",
+    "title": "Episode 1"
+  },
+  "page": {
+    "id": "1",
+    "number": "1",
+    "url_cn": "",
+    "url_es": ""
+  },
+  "dialogs": [
+    {
+      "isValid": true,
+      "cn": "搞什麼!不要打我的頭!",
+      "es": "¡Qué estás haciendo! ¡No me golpees en la cabeza!",
+      "en": "",
+      "es_final": "",
+      "en_final": ""
+    },
+    {
+      "isValid": true,
+      "cn": "啊,抱歉…自動就出手了AA",
+      "es": "ah, lo siento... tiro automático AA",
+      "en": "",
+      "es_final": "",
+      "en_final": ""
+    },
+    {
+      "isValid": true,
+      "cn": "全盛",
+      "es": "apogeo",
+      "en": "",
+      "es_final": "",
+      "en_final": ""
+    },
+    {
+      "isValid": true,
+      "cn": "大",
+      "es": "Grande",
+      "en": "",
+      "es_final": "",
+      "en_final": ""
+    },
+    {
+      "isValid": true,
+      "cn": "反正我的意思是別去工廠浪費精力,應該去有趣的地方工作才對~",
+      "es": "De todos modos, lo que quiero decir es que no vayas a la fábrica y desperdicies tu energía, deberías ir a trabajar a un lugar interesante",
+      "en": "",
+      "es_final": "",
+      "en_final": ""
+    },
+    {
+      "isValid": true,
+      "cn": "看看我,我在搖滾漢堡工作女店員超多的~~",
+      "es": "Mírame, trabajo en Rock Burger con muchas empleadas~~",
+      "en": "",
+      "es_final": "",
+      "en_final": ""
+    },
+    {
+      "isValid": false,
+      "cn": "吵維OOTÓON.NET",
+      "es": "Ruidoso OOTÓON.NET",
+      "en": "",
+      "es_final": "",
+      "en_final": ""
+    },
+    {
+      "isValid": true,
+      "cn": "有沒有女人又不重要…",
+      "es": "No importa si hay mujeres...",
+      "en": "",
+      "es_final": "",
+      "en_final": ""
+    },
+    {
+      "isValid": true,
+      "cn": "吼~臭小子你真的是很蠢耶",
+      "es": "Rugido ~ chico apestoso, eres realmente estúpido",
+      "en": "",
+      "es_final": "",
+      "en_final": ""
+    },
+    {
+      "isValid": true,
+      "cn": "三四娱乐",
+      "es": "tres cuatro entretenimiento",
+      "en": "",
+      "es_final": "",
+      "en_final": ""
+    },
+    {
+      "isValid": false,
+      "cn": "可",
+      "es": "poder",
+      "en": "",
+      "es_final": "",
+      "en_final": ""
+    }
+  ]
+}

@@ -1,5 +1,5 @@
 
-export default await async function getBase64FromUrl(image){
+export default async function getBase64FromUrl(image){
     const data = await fetch(image);
     const blob = await data.blob();
     return new Promise((resolve) => {

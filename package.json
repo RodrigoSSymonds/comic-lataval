@@ -1,5 +1,6 @@
 {
-  "name": "adrian-audit",
+  "homepage": ".",
+  "name": "lataval-comic-translate",
   "private": true,
   "version": "0.0.0",
   "scripts": {

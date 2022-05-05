@@ -26,7 +26,7 @@ function Dialogos({ numberOfDialogs, currentDialog, setCurrentDialog, JSON }) {
             }
           }}
         >
-          <img src="\src\assets\previous.png" 
+          <img src="https://storage.googleapis.com/bucket-for-comics/previous_e281a7898d/previous_e281a7898d.png" 
           style={{width: "20px", height: "20px"}}
           alt="..."  />
         </button>
@@ -39,7 +39,7 @@ function Dialogos({ numberOfDialogs, currentDialog, setCurrentDialog, JSON }) {
             }
           }}
         >
-          <img src="\src\assets\next.png"
+          <img src="https://storage.googleapis.com/bucket-for-comics/next_974355aaf8/next_974355aaf8.png"
                     style={{width: "20px", height: "20px"}}
                     alt="..."  />
         </button>

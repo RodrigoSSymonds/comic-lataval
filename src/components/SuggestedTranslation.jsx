@@ -20,6 +20,7 @@ function SuggestedTranslation({currentDialog, JSON, suggestedTranslation, setSug
         id="suggestedTranslation"
         placeholder="Sin sugerencia"
         onChange={(e) => setSuggestedTranslation(e.target.value)}
+        
       />
       <button
         className="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded"

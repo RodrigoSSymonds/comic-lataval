@@ -28,7 +28,6 @@ const ToolBox = ({
     right: 5,
     width: 30,
     height: 5,
-    backgroundColor: "#555555",
     color: "#ff0000",
     text: "",
   };

@@ -2,14 +2,13 @@ import ip from '../constants/ip.js';
 export default function saveSuggestedTranslation(suggestedTranslation, currentDialog, json) {
     const targetUrl = ip+'comic-templates/'+json.id;
     console.log(json);
-
-
-
+    alert(suggestedTranslation);
     let dialogs = json.dialogs;
-    dialogs[currentDialog].es_final = suggestedTranslation.value;
+    dialogs[currentDialog].es_final = suggestedTranslation;
     const j = {
         dialogs: dialogs,
     }
+    console.log(j);
 
     const newJson = JSON.stringify(j);
     console.log(newJson);
@@ -30,7 +29,7 @@ export default function saveSuggestedTranslation(suggestedTranslation, currentDi
 	)
 		.then(response => response.text())
         .then(response => JSON.parse(response))
-        .then(response => console.log(response))
+        .then(response => alert("Guardado"))
 		.catch(error => console.log('error', error));
 
     

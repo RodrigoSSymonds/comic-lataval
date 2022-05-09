@@ -5,7 +5,7 @@ function StatusSwitch({currentImage, currentStatus, JSON}) {
 
 
   React.useEffect(()=> {
-
+    //alert(currentStatus);
     if(currentStatus === 'done')document.getElementById("done").checked = true;
     if(currentStatus === 'in_progress')document.getElementById("in_progress").checked = true;
     if(currentStatus === 'in_correction')document.getElementById("in_correction").checked = true;

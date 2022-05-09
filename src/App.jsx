@@ -39,7 +39,7 @@ const App = () => {
 
 	</BrowserRouter>
 	</div>
-	<section id="loadingScreen"><img src="\src\assets\loading.gif"/></section>
+	<section id="loadingScreen"><img src="https://cutewallpaper.org/21/loading-gif-transparent-background/About-Our-Natural-Dry-Cat-Food-Rachael-Ray-Dry-Cat-Food.gif"/></section>
 	</main>
 
   );

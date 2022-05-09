@@ -2,7 +2,7 @@ import ip from '../constants/ip.js';
 export default function updatePageStatus(json) {
     const targetUrl = ip+'comic-templates/'+json.id;
     const newStatus = document.querySelector('input[name="status"]:checked').value;
-    alert(newStatus);
+    alert("Stauts guardado: "+newStatus);
     let newJson = {
                 status: newStatus
     };

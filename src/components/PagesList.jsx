@@ -59,9 +59,8 @@ const PagesList = () => {
 	const [suggestedTranslation, setSuggestedTranslation] = useState('');
     const [translation, setTranslation] = useState('');
 	const [selectedId, setSelectedId] = React.useState(null);
+    const [pageStatus, setPageStatus] = useState('');
     
-    const [done, setDone] = useState(false);
-
 
 
 	const jsonsArray = pagesArray;
@@ -94,6 +93,8 @@ const PagesList = () => {
     useEffect(() => {
         setTranslation(jsonsArray?.[currentImage]?.dialogs?.[currentDialog]?.es);
     },[currentDialog]);
+
+    
 
 
  
@@ -129,7 +130,7 @@ const PagesList = () => {
         
         <div className="flex w-full">
         <StatusSwitch
-                currentStatus={jsonsArray?[currentImage].status ? jsonsArray[currentImage].status : "loading" : "in_progress"}
+                currentStatus={jsonsArray ? jsonsArray[currentImage].status : "default"}
                 currentImage={jsonsArray ? jsonsArray[currentImage].page_number: 0}
                 JSON={JSON}
             />

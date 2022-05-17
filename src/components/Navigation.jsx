@@ -26,11 +26,32 @@ function Navigation({
 					Anterior
 				</button>
 
+				<div>
+				<label>Página</label>
+				<br/>
+				<select
+				className="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded"
+				onChange={(e) => {
+					setCurrentImage(e.target.value-1);
+				}}>
+					
+					{pagesArray ?  pagesArray.map((page, index) => (
+						<option key={index+1} value={index+1}>	{index+1}</option>
+               
+                )) :""}
+
+			
+
+					
+
+				</select>
+				</div>
 				<button
 					className="bg-red-700 hover:bg-red-900 text-white font-bold py-2 px-4 rounded"
 					onClick={() => saveImage( "canvasCont" ,true)}>
 					Guardar Imagen
 				</button>
+
 				<button
 					className="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded"
 					onClick={() => {

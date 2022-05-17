@@ -1,8 +1,12 @@
 import React from "react";
 import updatePageStatus from "../functions/updatePageStatus";
 
-function StatusSwitch({currentImage, currentStatus, JSON}) {
+function StatusSwitch({currentImage, currentStatus, JSON, setJson}) {
 
+  function saveStatus(JSON){
+    alert("saving status");
+    updatePageStatus(JSON);
+  }
 
   React.useEffect(()=> {
     //alert(currentStatus);
@@ -43,7 +47,7 @@ function StatusSwitch({currentImage, currentStatus, JSON}) {
     
     <button
         className="bg-purple-500 hover:bg-purple-700 text-white font-bold py-2 px-4 rounded"
-        onClick={() => updatePageStatus(JSON)} 
+        onClick={() => saveStatus(JSON)} 
       >
         Guardar
       </button>

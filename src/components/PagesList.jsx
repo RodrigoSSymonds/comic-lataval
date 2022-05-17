@@ -133,6 +133,7 @@ const PagesList = () => {
                 currentStatus={jsonsArray ? jsonsArray[currentImage].status : "default"}
                 currentImage={jsonsArray ? jsonsArray[currentImage].page_number: 0}
                 JSON={JSON}
+                setJSON={setJSON}
             />
         </div>
         
@@ -182,6 +183,7 @@ const PagesList = () => {
             sendPictureAndJsonToStrapi={sendPictureAndJsonToStrapi}
             generateAndUploadImgToStrapi = {generateAndUploadImgToStrapi}
             pagesArray={pagesArray}
+            setJSON={setJSON}
         />
         
     </section>

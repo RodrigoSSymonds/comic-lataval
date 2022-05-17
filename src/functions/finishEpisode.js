@@ -3,17 +3,37 @@ import startProcess from './startProcess.js';
 import endProcess from './endProcess.js';
 export default function finishEpisode(json) {
     startProcess();
-    console.log(json);
-    var isValid = true;    
-    for (let i = 0; i < json[i].pages; i++) {
-       if(json.pages[i].status!="done"){
+
+    const episodeNumber = window.location.href.split("/").pop()
+    const targetUrl = ip+'episodios/'+episodeNumber;
+    var missingPages="";
+    var isValid = true;  
+    var requestOptions = {
+        method: 'GET',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        redirect: 'follow',
+
+    };
+    fetch(
+		targetUrl,
+		requestOptions
+	).then(response => response.json())
+    .then(response => {
+
+   //console.log("first part");
+   //console.log(response);
+    for (let i = 0; i < response.pages.length; i++) {
+        console.log("page "+i +": "+response.pages[i].status);
+       if(response.pages[i].status!="done"){
+           missingPages += i+1+", ";
            isValid = false;
        }
     }
     if(isValid) {
 
-    const episodeNumber = window.location.href.split("/").pop()
-    const targetUrl = ip+'episodios/'+episodeNumber;
+  
     let newJson = {
                 status: "done"
     };
@@ -27,7 +47,8 @@ export default function finishEpisode(json) {
         redirect: 'follow',
 
     };
-
+  
+   
     fetch(
 		targetUrl,
 		requestOptions
@@ -40,6 +61,8 @@ export default function finishEpisode(json) {
     
 
     }else{
-        alert("El episodio no puede terminar porque hay alguna pagina sin completar");
+        alert("El episodio no puede terminar porque las siguienetes páginas están sin completar: "+ missingPages);
+        endProcess();
     }
+})
 }
